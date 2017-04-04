@@ -44,8 +44,8 @@ x_train.iloc[:, 1:] = x_train.iloc[:, 1:].apply(LabelEncoder().fit_transform)
 x_test.iloc[:, 1:] = x_test.iloc[:, 1:].apply(LabelEncoder().fit_transform)
 
 # printing first few tuples of x and y of training dataset
-print x_train.head()
-print y_train.head()
+print x_train.head(50)
+print y_train.head(50)
 
 #apply logistic regression
 logit = LogisticRegression()
